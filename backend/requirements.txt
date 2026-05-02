@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+langchain
+langchain-google-genai
+google-generativeai
+pinecone-client
+supabase
+python-dotenv
+pypdf2
+pydantic
+python-multipart
+pandas
+sentence-transformers

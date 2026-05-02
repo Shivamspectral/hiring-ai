@@ -9,3 +9,4 @@ pymupdf
 python-multipart
 pydantic
 httpx
+PyPDF2

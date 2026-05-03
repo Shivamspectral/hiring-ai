@@ -259,10 +259,23 @@ This project was built as the **final project for the Alta AI Builder Fellowship
 - **Production patterns** — caching, error handling, modular code, live deployment
 
 ---
+## 🔮 Future Scope
 
-## 📄 License
+TalentLens is built to scale. Here's what comes next:
 
-MIT License — feel free to use, modify, and build on this.
+**Features**
+- 🔐 **Auth & Multi-tenant** — HR teams get their own workspace with Supabase Auth
+- 📹 **AI Video Interviews** — automated async video screening with AI scoring
+- 🔗 **ATS Integrations** — connect with Greenhouse, Lever, Workday via webhooks
+- 📊 **Analytics Dashboard** — hiring funnel metrics, time-to-hire, diversity reports
+- 🌍 **Multi-language Support** — parse and score resumes in any language
+- 📱 **Mobile App** — hiring managers can review candidates on the go
+
+**Scalability**
+- 🐳 **Dockerized deployment** — containerize backend for Kubernetes scaling
+- ⚡ **Async processing queue** — Celery + Redis for handling 1000s of resumes concurrently
+- 💰 **SaaS monetization** — subscription tiers (Free / Pro / Enterprise) with usage limits
+- 🔄 **Continuous learning** — retrain matching model on company-specific hiring outcomes
 
 ---
 

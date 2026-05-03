@@ -1,6 +1,6 @@
 # ✦ TalentLens
 
-> A production-grade AI-powered recruitment system that automates resume screening, candidate ranking, bias detection, and skill gap analysis — built for scale.
+> A production-grade AI-powered recruitment system that automates resume screening, candidate ranking, bias detection, and skill gap analysis — built as Final project for my Alta fellowship,can be for scaled.
 
 ---
 

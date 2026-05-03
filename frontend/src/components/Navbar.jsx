@@ -68,7 +68,7 @@ export default function Navbar() {
     <nav style={navStyle}>
       <Link to="/" style={logoStyle}>
         <div style={logoIconStyle}>✦</div>
-        <span style={logoTextStyle}>AI Hiring Pipeline</span>
+        <span style={logoTextStyle}>TalentLens</span>
       </Link>
       <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
         <Link to="/" style={linkStyle('/')}>Dashboard</Link>

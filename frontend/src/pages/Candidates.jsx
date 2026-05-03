@@ -21,19 +21,23 @@ export default function Candidates() {
   useEffect(() => { fetchCandidates() }, [jobId])
 
   const handleUpload = async (e) => {
-    const file = e.target.files[0]
-    if (!file) return
+    const files = Array.from(e.target.files)
+    if (!files.length) return
     setUploading(true)
-    const formData = new FormData()
-    formData.append('resume', file)
-    try {
-      await applyToJob(jobId, formData)
-      fetchCandidates()
-    } catch (err) {
-      alert('Failed to upload resume')
-    } finally {
-      setUploading(false)
+    let successCount = 0
+    for (const file of files) {
+      const formData = new FormData()
+      formData.append('resume', file)
+      try {
+        await applyToJob(jobId, formData)
+        successCount++
+      } catch (err) {
+        console.error(`Failed to upload ${file.name}`)
+      }
     }
+    alert(`✅ ${successCount}/${files.length} resumes uploaded successfully!`)
+    fetchCandidates()
+    setUploading(false)
   }
 
   const handleProcess = async () => {
@@ -79,7 +83,7 @@ export default function Candidates() {
             cursor: uploading ? 'not-allowed' : 'pointer', fontSize: '13px', fontWeight: '500'
           }}>
             {uploading ? '⏳ Uploading...' : '📄 Upload Resume'}
-            <input type="file" accept=".pdf" onChange={handleUpload} style={{ display: 'none' }} disabled={uploading} />
+            <input type="file" accept=".pdf" multiple onChange={handleUpload} style={{ display: 'none' }} disabled={uploading} />
           </label>
           <button
             onClick={handleProcess}

@@ -91,14 +91,14 @@ export default function Candidates() {
               padding: '10px 18px', cursor: processing ? 'not-allowed' : 'pointer', fontSize: '13px', fontWeight: '500'
             }}
           >
-            {processing ? '⏳ Running Pipeline...' : '✦ Run AI Pipeline'}
+            {processing ? '⏳ Screening Candidates...' : '✦ Start AI Screening'}
           </button>
         </div>
       </div>
 
       {pipelineResult && (
         <div style={{ background: '#FFFDF0', border: '1px solid #EDD96A', borderRadius: '12px', padding: '20px 24px', marginBottom: '1.5rem' }}>
-          <div style={{ fontFamily: "'Playfair Display', serif", fontSize: '16px', fontWeight: '600', color: '#B8942A', marginBottom: '12px' }}>✦ Pipeline Complete</div>
+          <div style={{ fontFamily: "'Playfair Display', serif", fontSize: '16px', fontWeight: '600', color: '#B8942A', marginBottom: '12px' }}>✦ Screening Complete</div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '12px', marginBottom: '14px' }}>
             {[
               { label: 'Shortlisted', value: pipelineResult.shortlisted },

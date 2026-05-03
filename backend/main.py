@@ -86,7 +86,7 @@ async def apply_to_job(job_id: str, resume: UploadFile = File(...)):
     
     # Parse resume
     file_bytes = await resume.read()
-    resume_text = extract_text_from_pdf(file_bytes)
+   resume_text = extract_text_from_pdf(file_bytes, resume.filename)
     
     # Check cache
     cached = get_cached("resume_parse", resume_text)

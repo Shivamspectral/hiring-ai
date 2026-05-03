@@ -83,7 +83,7 @@ export default function Candidates() {
             cursor: uploading ? 'not-allowed' : 'pointer', fontSize: '13px', fontWeight: '500'
           }}>
             {uploading ? '⏳ Uploading...' : '📄 Upload Resume'}
-            <input type="file" accept=".pdf" multiple onChange={handleUpload} style={{ display: 'none' }} disabled={uploading} />
+            <input type="file" accept=".pdf,.txt,.docx" multiple onChange={handleUpload} style={{ display: 'none' }} disabled={uploading} />
           </label>
           <button
             onClick={handleProcess}

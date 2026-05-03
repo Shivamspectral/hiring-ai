@@ -71,24 +71,6 @@ async def create_job(job: JobCreate):
         print("❌ ERROR IN CREATE JOB:")
         print(traceback.format_exc())
         raise
-    
-    # Save to Supabase
-    response = supabase.table("jobs").insert({
-        "id": job_id,
-        "title": job.title,
-        "description": job.description,
-        "requirements": requirements
-    }).execute()
-    
-    # Embed into Pinecone
-    embed_jd(job.description, job_id)
-    
-    return {
-        "job_id": job_id,
-        "title": job.title,
-        "requirements": requirements,
-        "message": "Job created and indexed successfully"
-    }
 
 @app.post("/jobs/{job_id}/apply")
 async def apply_to_job(job_id: str, resume: UploadFile = File(...)):

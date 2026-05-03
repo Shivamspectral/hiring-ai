@@ -1,4 +1,4 @@
-# ✦ AI Hiring Pipeline
+# ✦ TalentLens
 
 > A production-grade AI-powered recruitment system that automates resume screening, candidate ranking, bias detection, and skill gap analysis — built for scale.
 

@@ -195,7 +195,7 @@ Run Pipeline
 
 ## 🏗️ Built With Purpose
 
-This project was built as a fellowship project demonstrating:
+This project was built as a AI Alta Builder fellowship project demonstrating:
 - **Agentic AI design** — autonomous decision-making without human-in-the-loop
 - **RAG architecture** — retrieval-augmented generation for accurate matching
 - **Production patterns** — caching, error handling, modular code structure

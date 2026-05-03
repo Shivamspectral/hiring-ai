@@ -1,8 +1,18 @@
-# ✦ TalentLens — AI Hiring Pipeline
+# ✦ TalentLens — RAG-Based Agentic AI Hiring Tool
 
 > Built for the **Alta AI Builder Fellowship** · [Live Demo](https://talentlens-ai-hiring.vercel.app) · [GitHub](https://github.com/Shivamspectral/talentlens)
 
-TalentLens is a production-grade AI recruitment platform that replaces slow, biased, manual hiring with an intelligent end-to-end pipeline. Drop a job description, upload resumes, and let the AI do the rest — scoring, shortlisting, rejecting, and building learning roadmaps for every candidate.
+TalentLens is a production-grade **RAG-based Agentic AI hiring tool** that eliminates slow, biased, manual recruitment. At its core is a **Retrieval-Augmented Generation (RAG) pipeline** — job descriptions and resumes are embedded as vectors into Pinecone, enabling semantic similarity search far beyond simple keyword matching. On top of that sits an **autonomous AI agent** powered by LLaMA 3.3 70B that independently reasons, scores, decides, and acts — shortlisting candidates, rejecting others, generating interview questions, and drafting emails — all without any human input.
+
+---
+
+## 🧠 Why RAG + Agentic AI?
+
+Traditional ATS tools match keywords. TalentLens understands meaning.
+
+- **RAG (Retrieval-Augmented Generation)** — resumes and JDs are converted into semantic vectors using Google Gemini Embeddings and stored in Pinecone. When a candidate applies, the system retrieves the most relevant JD context and feeds it to the LLM for deep, context-aware evaluation — not just keyword matching.
+- **Agentic AI** — the hiring agent doesn't just answer questions, it takes actions. It autonomously ranks every candidate, makes shortlist/reject decisions, generates personalized interview questions, and drafts emails — operating end-to-end like a real recruiter.
+- **LLaMA 3.3 70B via Groq** — all reasoning, scoring, bias detection, and skill gap analysis runs through one of the most capable open-source LLMs, served at lightning speed via Groq API.
 
 ---
 

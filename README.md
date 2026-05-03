@@ -209,7 +209,7 @@ MIT License — feel free to use, modify, and build on this.
 
 ---
 
-🌐 **Live Demo:** https://hiring-ai-delta.vercel.app
+🌐 **Live Demo:**https://talentlens-ai-hiring.vercel.app
 
 
 <div align="center">
